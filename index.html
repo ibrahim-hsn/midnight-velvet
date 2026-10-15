@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Midnight Velvet — Roast & Ritual</title>
+  <meta name="description" content="Midnight Velvet: single-origin Colombian coffee beans with notes of dark chocolate, caramel and candied pecan. Roasted to order, shipped within 24 hours."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&amp;family=Playfair+Display:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body class="bg-surface text-on-surface antialiased overflow-x-hidden">
+
+  <header class="sticky top-0 z-50 bg-surface/85 backdrop-blur-md border-b border-outline-variant/40">
+    <div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+      <a class="flex items-center gap-3" href="index.html" aria-label="Roast &amp; Ritual home">
+        <span class="w-9 h-9 rounded-full bg-primary-container/20 border border-primary-container/40 flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary text-2xl" aria-hidden="true">coffee</span>
+        </span>
+        <span class="font-serif text-2xl text-primary font-semibold tracking-tight">Roast &amp; Ritual</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide" aria-label="Main">
+        <a class="text-primary border-b-2 border-primary pb-1" href="index.html" aria-current="page">Home</a>
+        <a class="text-on-surface-variant hover:text-secondary transition-colors" href="about.html">About</a>
+        <a class="text-on-surface-variant hover:text-secondary transition-colors" href="order.html">Order</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:flex bg-primary-container text-on-primary-container text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-secondary transition-colors shadow-glow items-center gap-1.5" href="order.html">
+          Order Now <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface-variant" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="material-symbols-outlined text-2xl" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant/40 px-6 pb-4 text-base font-semibold">
+      <a class="block py-3 text-primary" href="index.html">Home</a>
+      <a class="block py-3 text-on-surface-variant" href="about.html">About</a>
+      <a class="block py-3 text-on-surface-variant" href="order.html">Order</a>
+      <a class="mt-2 block text-center bg-primary-container text-on-primary-container px-6 py-3 rounded-full" href="order.html">Order Now</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO · Asset 1 -->
+    <section class="relative overflow-hidden border-b border-outline-variant/30">
+      <div class="absolute -top-40 left-1/4 w-[640px] h-[640px] rounded-full bg-primary-container/10 blur-[140px] pointer-events-none"></div>
+      <div class="relative max-w-[1200px] mx-auto px-6 py-16 lg:py-24 grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-5 reveal">
+          <p class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.12em] uppercase text-secondary border border-secondary/30 rounded-full px-4 py-1.5">✦ Single origin · Roasted to order</p>
+          <h1 class="font-serif text-5xl lg:text-6xl leading-[1.05] font-semibold mt-6">Midnight <em class="text-primary-container">Velvet.</em></h1>
+          <p class="text-lg text-on-surface-variant mt-5 max-w-md">One Colombian bean, slow-roasted to a medium-dark, with notes of dark chocolate, caramel and candied pecan.</p>
+          <div class="flex flex-wrap items-center gap-4 mt-8">
+            <a class="bg-primary-container text-on-primary-container font-semibold px-8 py-3.5 rounded-full hover:bg-secondary transition-colors shadow-glow" href="order.html">Order Now · from $24</a>
+            <a class="text-on-surface font-semibold px-6 py-3.5 rounded-full border border-outline-variant hover:border-primary-container transition-colors" href="#product">See the bean</a>
+          </div>
+          <p class="mt-8 text-sm text-on-surface-variant"><span class="text-secondary">★★★★★</span> 4.9/5 from 2,400+ coffee lovers</p>
+        </div>
+        <div class="lg:col-span-7">
+          <div class="asset-slot asset-fade aspect-[4/5] max-h-[78vh] mx-auto " data-asset="home-hero-brew.mp4">
+          <span class="asset-label"><span class="material-symbols-outlined" aria-hidden="true">coffee_maker</span>[ASSET: home-hero-brew.mp4]</span>
+          <video class="asset-media" src="assets/home-hero-brew.mp4" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT · Asset 2 -->
+    <section id="product" class="bg-latte-cream text-deep-roast">
+      <div class="max-w-[1200px] mx-auto px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <div class="asset-slot aspect-square " data-asset="product-bag.jpg">
+          <span class="asset-label"><span class="material-symbols-outlined" aria-hidden="true">inventory_2</span>[ASSET: product-bag.jpg]</span>
+          <img class="asset-media" src="assets/product-bag.jpg" alt="Midnight Velvet coffee bag" loading="lazy"/>
+        </div>
+        </div>
+        <div class="reveal">
+          <p class="text-xs font-bold tracking-[0.12em] uppercase text-mocha-brown">The bean</p>
+          <h2 class="font-serif text-4xl lg:text-5xl font-semibold mt-3">Deep, smooth, chocolate-rich.</h2>
+          <dl class="grid grid-cols-2 gap-4 mt-8 text-sm">
+            <div class="bg-crema-white rounded-card p-4 border border-mocha-brown/15"><dt class="text-muted-mocha">Origin</dt><dd class="font-semibold mt-1">Antioquia, Colombia</dd></div>
+            <div class="bg-crema-white rounded-card p-4 border border-mocha-brown/15"><dt class="text-muted-mocha">Altitude</dt><dd class="font-semibold mt-1">1,850m</dd></div>
+            <div class="bg-crema-white rounded-card p-4 border border-mocha-brown/15"><dt class="text-muted-mocha">Process</dt><dd class="font-semibold mt-1">Washed</dd></div>
+            <div class="bg-crema-white rounded-card p-4 border border-mocha-brown/15"><dt class="text-muted-mocha">Roast</dt><dd class="font-semibold mt-1 flex items-center gap-2">Medium-Dark <span class="flex gap-1" aria-hidden="true"><i class="w-2.5 h-2.5 rounded-full bg-caramel-gold"></i><i class="w-2.5 h-2.5 rounded-full bg-caramel-gold"></i><i class="w-2.5 h-2.5 rounded-full bg-caramel-gold"></i><i class="w-2.5 h-2.5 rounded-full bg-caramel-gold"></i><i class="w-2.5 h-2.5 rounded-full bg-mocha-brown/25"></i></span></dd></div>
+          </dl>
+          <div class="flex flex-wrap gap-2 mt-6">
+            <span class="text-sm px-3 py-1 rounded-full bg-crema-white border border-mocha-brown/20">Dark Chocolate</span>
+            <span class="text-sm px-3 py-1 rounded-full bg-crema-white border border-mocha-brown/20">Caramel</span>
+            <span class="text-sm px-3 py-1 rounded-full bg-crema-white border border-mocha-brown/20">Candied Pecan</span>
+          </div>
+          <p class="text-sm font-semibold mt-8">Choose your size</p>
+          <div class="grid grid-cols-3 gap-3 mt-3">
+            <a class="rounded-card bg-crema-white border border-mocha-brown/20 hover:border-caramel-gold p-4 text-center transition-colors" href="order.html?size=250"><span class="block font-semibold">250g</span><span class="text-sm text-muted-mocha">$24</span></a>
+            <a class="rounded-card bg-crema-white border-2 border-caramel-gold p-4 text-center relative" href="order.html?size=500"><span class="absolute -top-2.5 left-1/2 -translate-x-1/2 text-[10px] font-bold uppercase tracking-wider bg-caramel-gold text-deep-roast px-2 py-0.5 rounded-full">Popular</span><span class="block font-semibold">500g</span><span class="text-sm text-muted-mocha">$42</span></a>
+            <a class="rounded-card bg-crema-white border border-mocha-brown/20 hover:border-caramel-gold p-4 text-center transition-colors" href="order.html?size=1000"><span class="block font-semibold">1kg</span><span class="text-sm text-muted-mocha">$76</span></a>
+          </div>
+          <p class="text-sm text-muted-mocha mt-3">Whole bean or ground for espresso, filter or French press.</p>
+          <a class="inline-flex mt-8 bg-deep-roast text-warm-ivory font-semibold px-8 py-3.5 rounded-full hover:bg-mocha-brown transition-colors" href="order.html">Order Midnight Velvet</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RITUAL · Asset 3 -->
+    <section class="border-b border-outline-variant/30">
+      <div class="max-w-[1200px] mx-auto px-6 py-20 lg:py-28">
+        <div class="reveal">
+          <div class="asset-slot asset-fade aspect-[16/9] lg:aspect-[21/9] " data-asset="home-pour-loop.mp4">
+          <span class="asset-label"><span class="material-symbols-outlined" aria-hidden="true">local_cafe</span>[ASSET: home-pour-loop.mp4]</span>
+          <video class="asset-media" src="assets/home-pour-loop.mp4" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+        </div>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-6 mt-12 reveal">
+          <div class="text-center"><span class="material-symbols-outlined text-primary-container text-3xl" aria-hidden="true">local_fire_department</span><h3 class="font-serif text-xl mt-2">Roasted to order</h3><p class="text-sm text-on-surface-variant mt-1">Small 15 kg batches, every Tuesday.</p></div>
+          <div class="text-center"><span class="material-symbols-outlined text-primary-container text-3xl" aria-hidden="true">local_shipping</span><h3 class="font-serif text-xl mt-2">Shipped in 24 hours</h3><p class="text-sm text-on-surface-variant mt-1">Free shipping on orders over $40.</p></div>
+          <div class="text-center"><span class="material-symbols-outlined text-primary-container text-3xl" aria-hidden="true">verified</span><h3 class="font-serif text-xl mt-2">Nitrogen sealed</h3><p class="text-sm text-on-surface-variant mt-1">Valve bags keep every bean fresh.</p></div>
+        </div>
+        <div class="text-center mt-14">
+          <a class="inline-flex bg-primary-container text-on-primary-container font-semibold px-10 py-4 rounded-full hover:bg-secondary transition-colors shadow-glow" href="order.html">Start your ritual</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-surface-container-lowest border-t border-outline-variant/30">
+    <div class="max-w-[1200px] mx-auto px-6 py-12 flex flex-col md:flex-row gap-8 md:items-center md:justify-between">
+      <div>
+        <p class="font-serif text-2xl text-primary">Roast &amp; Ritual</p>
+        <p class="text-sm text-on-surface-variant mt-1">One bean. Roasted to order. Shipped fresh.</p>
+      </div>
+      <nav class="flex gap-6 text-sm text-on-surface-variant" aria-label="Footer">
+        <a class="hover:text-secondary" href="index.html">Home</a>
+        <a class="hover:text-secondary" href="about.html">About</a>
+        <a class="hover:text-secondary" href="order.html">Order</a>
+        <a class="hover:text-secondary" href="mailto:hello@roastandritual.com">Contact</a>
+      </nav>
+    </div>
+    <p class="text-center text-xs text-outline pb-8">© <span data-year>2026</span> Roast &amp; Ritual. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
