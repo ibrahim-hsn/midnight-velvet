@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — Roast & Ritual</title>
+  <meta name="description" content="The story behind Midnight Velvet: one farm partnership in Antioquia, Colombia, roasted in small batches."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&amp;family=Playfair+Display:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body class="bg-surface text-on-surface antialiased overflow-x-hidden">
+
+  <header class="sticky top-0 z-50 bg-surface/85 backdrop-blur-md border-b border-outline-variant/40">
+    <div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+      <a class="flex items-center gap-3" href="index.html" aria-label="Roast &amp; Ritual home">
+        <span class="w-9 h-9 rounded-full bg-primary-container/20 border border-primary-container/40 flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary text-2xl" aria-hidden="true">coffee</span>
+        </span>
+        <span class="font-serif text-2xl text-primary font-semibold tracking-tight">Roast &amp; Ritual</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide" aria-label="Main">
+        <a class="text-on-surface-variant hover:text-secondary transition-colors" href="index.html">Home</a>
+        <a class="text-primary border-b-2 border-primary pb-1" href="about.html" aria-current="page">About</a>
+        <a class="text-on-surface-variant hover:text-secondary transition-colors" href="order.html">Order</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:flex bg-primary-container text-on-primary-container text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-secondary transition-colors shadow-glow items-center gap-1.5" href="order.html">
+          Order Now <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface-variant" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="material-symbols-outlined text-2xl" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant/40 px-6 pb-4 text-base font-semibold">
+      <a class="block py-3 text-on-surface-variant" href="index.html">Home</a>
+      <a class="block py-3 text-primary" href="about.html">About</a>
+      <a class="block py-3 text-on-surface-variant" href="order.html">Order</a>
+      <a class="mt-2 block text-center bg-primary-container text-on-primary-container px-6 py-3 rounded-full" href="order.html">Order Now</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO · Asset 1 -->
+    <section class="border-b border-outline-variant/30">
+      <div class="max-w-[1200px] mx-auto px-6 pt-16 lg:pt-24 pb-16 text-center reveal">
+        <p class="text-xs font-bold tracking-[0.12em] uppercase text-secondary">Our story</p>
+        <h1 class="font-serif text-5xl lg:text-6xl font-semibold mt-4">One bean. <em class="text-primary-container">Done right.</em></h1>
+        <p class="text-lg text-on-surface-variant mt-5 max-w-2xl mx-auto">We make one coffee, and we put all our care into it. Midnight Velvet comes from a single partner farm in Antioquia, Colombia.</p>
+      </div>
+      <div class="max-w-[1200px] mx-auto px-6 pb-20 reveal">
+        <div class="asset-slot aspect-[16/9] lg:aspect-[21/9] " data-asset="about-origin.jpg">
+          <span class="asset-label"><span class="material-symbols-outlined" aria-hidden="true">landscape</span>[ASSET: about-origin.jpg]</span>
+          <img class="asset-media" src="assets/about-origin.jpg" alt="Coffee farm in Antioquia, Colombia" loading="lazy"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY · Asset 2 -->
+    <section class="bg-latte-cream text-deep-roast">
+      <div class="max-w-[1200px] mx-auto px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <div class="asset-slot aspect-[4/5] max-w-md mx-auto lg:mx-0 " data-asset="about-founder.jpg">
+          <span class="asset-label"><span class="material-symbols-outlined" aria-hidden="true">person</span>[ASSET: about-founder.jpg]</span>
+          <img class="asset-media" src="assets/about-founder.jpg" alt="Julian Vance, founder and master roaster" loading="lazy"/>
+        </div>
+        </div>
+        <div class="reveal">
+          <p class="text-xs font-bold tracking-[0.12em] uppercase text-mocha-brown">Since 2018</p>
+          <h2 class="font-serif text-4xl lg:text-5xl font-semibold mt-3">From a garage drum to one perfect roast.</h2>
+          <p class="mt-6 text-muted-mocha text-lg">Julian Vance started roasting on a restored 1968 drum roaster with one goal: a coffee that's smooth enough to drink black and rich enough to taste like dessert.</p>
+          <p class="mt-4 text-muted-mocha text-lg">After years of cupping, he stopped looking. Midnight Velvet is the result, and it's the only coffee we sell.</p>
+          <p class="font-serif italic text-2xl mt-8">Julian Vance</p>
+          <p class="text-sm text-muted-mocha">Founder &amp; Master Roaster</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS · Asset 3 -->
+    <section class="border-b border-outline-variant/30">
+      <div class="max-w-[1200px] mx-auto px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal lg:order-2">
+          <div class="asset-slot aspect-[4/3] " data-asset="about-roast.jpg">
+          <span class="asset-label"><span class="material-symbols-outlined" aria-hidden="true">local_fire_department</span>[ASSET: about-roast.jpg]</span>
+          <img class="asset-media" src="assets/about-roast.jpg" alt="Freshly roasted beans in the drum roaster cooling tray" loading="lazy"/>
+        </div>
+        </div>
+        <div class="reveal lg:order-1">
+          <p class="text-xs font-bold tracking-[0.12em] uppercase text-secondary">How it's made</p>
+          <h2 class="font-serif text-4xl font-semibold mt-3">Three steps. No shortcuts.</h2>
+          <ol class="mt-8 space-y-6">
+            <li class="flex gap-4"><span class="w-9 h-9 shrink-0 rounded-full bg-primary-container text-on-primary-container font-bold flex items-center justify-center">1</span><div><h3 class="font-serif text-xl">Sourced direct</h3><p class="text-on-surface-variant mt-1">Hand-picked at 1,850m. We pay our farm partners 40% above market.</p></div></li>
+            <li class="flex gap-4"><span class="w-9 h-9 shrink-0 rounded-full bg-primary-container text-on-primary-container font-bold flex items-center justify-center">2</span><div><h3 class="font-serif text-xl">Roasted in small batches</h3><p class="text-on-surface-variant mt-1">15 kg at a time, to a medium-dark that brings out the chocolate.</p></div></li>
+            <li class="flex gap-4"><span class="w-9 h-9 shrink-0 rounded-full bg-primary-container text-on-primary-container font-bold flex items-center justify-center">3</span><div><h3 class="font-serif text-xl">Sealed and shipped</h3><p class="text-on-surface-variant mt-1">Nitrogen-flushed and on its way to you within 24 hours.</p></div></li>
+          </ol>
+          <a class="inline-flex mt-10 bg-primary-container text-on-primary-container font-semibold px-8 py-3.5 rounded-full hover:bg-secondary transition-colors shadow-glow" href="order.html">Order Midnight Velvet</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-surface-container-lowest border-t border-outline-variant/30">
+    <div class="max-w-[1200px] mx-auto px-6 py-12 flex flex-col md:flex-row gap-8 md:items-center md:justify-between">
+      <div>
+        <p class="font-serif text-2xl text-primary">Roast &amp; Ritual</p>
+        <p class="text-sm text-on-surface-variant mt-1">One bean. Roasted to order. Shipped fresh.</p>
+      </div>
+      <nav class="flex gap-6 text-sm text-on-surface-variant" aria-label="Footer">
+        <a class="hover:text-secondary" href="index.html">Home</a>
+        <a class="hover:text-secondary" href="about.html">About</a>
+        <a class="hover:text-secondary" href="order.html">Order</a>
+        <a class="hover:text-secondary" href="mailto:hello@roastandritual.com">Contact</a>
+      </nav>
+    </div>
+    <p class="text-center text-xs text-outline pb-8">© <span data-year>2026</span> Roast &amp; Ritual. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

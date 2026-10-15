@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Midnight Velvet — Roast & Ritual</title>
+  <meta name="description" content="Order Midnight Velvet coffee beans. Choose your size and grind, buy once or subscribe and save 15%."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&amp;family=Playfair+Display:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body class="bg-surface text-on-surface antialiased overflow-x-hidden">
+
+  <header class="sticky top-0 z-50 bg-surface/85 backdrop-blur-md border-b border-outline-variant/40">
+    <div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+      <a class="flex items-center gap-3" href="index.html" aria-label="Roast &amp; Ritual home">
+        <span class="w-9 h-9 rounded-full bg-primary-container/20 border border-primary-container/40 flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary text-2xl" aria-hidden="true">coffee</span>
+        </span>
+        <span class="font-serif text-2xl text-primary font-semibold tracking-tight">Roast &amp; Ritual</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide" aria-label="Main">
+        <a class="text-on-surface-variant hover:text-secondary transition-colors" href="index.html">Home</a>
+        <a class="text-on-surface-variant hover:text-secondary transition-colors" href="about.html">About</a>
+        <a class="text-primary border-b-2 border-primary pb-1" href="order.html" aria-current="page">Order</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:flex bg-primary-container text-on-primary-container text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-secondary transition-colors shadow-glow items-center gap-1.5" href="order.html">
+          Order Now <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface-variant" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="material-symbols-outlined text-2xl" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant/40 px-6 pb-4 text-base font-semibold">
+      <a class="block py-3 text-on-surface-variant" href="index.html">Home</a>
+      <a class="block py-3 text-on-surface-variant" href="about.html">About</a>
+      <a class="block py-3 text-primary" href="order.html">Order</a>
+      <a class="mt-2 block text-center bg-primary-container text-on-primary-container px-6 py-3 rounded-full" href="order.html">Order Now</a>
+    </div>
+  </header>
+
+  <main class="bg-latte-cream text-deep-roast">
+    <form id="order-form" class="max-w-[1200px] mx-auto px-6 py-12 lg:py-16 grid lg:grid-cols-12 gap-10" novalidate>
+      <!-- Product + options -->
+      <div class="lg:col-span-7 space-y-8">
+        <div class="grid sm:grid-cols-[180px_1fr] gap-6 items-center">
+          <div class="asset-slot aspect-square " data-asset="product-bag.jpg">
+          <span class="asset-label"><span class="material-symbols-outlined" aria-hidden="true">inventory_2</span>[ASSET: product-bag.jpg]</span>
+          <img class="asset-media" src="assets/product-bag.jpg" alt="Midnight Velvet coffee bag" loading="lazy"/>
+        </div>
+          <div>
+            <p class="text-xs font-bold tracking-[0.12em] uppercase text-mocha-brown">Single origin · Antioquia, Colombia</p>
+            <h1 class="font-serif text-4xl lg:text-5xl font-semibold mt-2">Midnight Velvet</h1>
+            <p class="text-muted-mocha mt-2">Dark chocolate · Caramel · Candied pecan · Medium-Dark roast</p>
+          </div>
+        </div>
+
+        <fieldset class="bg-crema-white rounded-card border border-mocha-brown/15 p-6">
+          <legend class="sr-only">Size</legend>
+          <p class="font-serif text-2xl">1. Size</p>
+          <div class="grid grid-cols-3 gap-3 mt-4">
+            <label class="option relative"><input type="radio" name="size" value="250" checked /><span class="pill"><span class="font-semibold">250g</span><span class="text-xs text-muted-mocha">$24 · ~16 cups</span></span></label>
+            <label class="option relative"><input type="radio" name="size" value="500" /><span class="pill"><span class="font-semibold">500g</span><span class="text-xs text-muted-mocha">$42 · ~32 cups</span></span></label>
+            <label class="option relative"><input type="radio" name="size" value="1000" /><span class="pill"><span class="font-semibold">1kg</span><span class="text-xs text-muted-mocha">$76 · ~64 cups</span></span></label>
+          </div>
+          <p class="font-serif text-2xl mt-8">2. Grind</p>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4">
+            <label class="option relative"><input type="radio" name="grind" value="Whole Bean" checked /><span class="pill"><span class="font-semibold">Whole Bean</span></span></label>
+            <label class="option relative"><input type="radio" name="grind" value="Espresso" /><span class="pill"><span class="font-semibold">Espresso</span></span></label>
+            <label class="option relative"><input type="radio" name="grind" value="Filter" /><span class="pill"><span class="font-semibold">Filter</span></span></label>
+            <label class="option relative"><input type="radio" name="grind" value="French Press" /><span class="pill"><span class="font-semibold">French Press</span></span></label>
+          </div>
+          <p class="font-serif text-2xl mt-8">3. How often?</p>
+          <div class="grid sm:grid-cols-2 gap-3 mt-4">
+            <label class="option relative"><input type="radio" name="plan" value="once" checked /><span class="pill"><span class="font-semibold">One-time purchase</span></span></label>
+            <label class="option relative"><input type="radio" name="plan" value="subscribe" /><span class="pill"><span class="font-semibold">Subscribe &amp; save 15%</span><span class="text-xs text-muted-mocha">Delivered every 2 weeks · cancel anytime</span></span></label>
+          </div>
+          <div class="flex items-center justify-between mt-8">
+            <p class="font-serif text-2xl">Quantity</p>
+            <div class="flex items-center gap-3 bg-latte-cream rounded-full p-1 border border-mocha-brown/20">
+              <button type="button" id="qty-minus" class="w-9 h-9 rounded-full hover:bg-crema-white" aria-label="Decrease quantity">−</button>
+              <output id="qty" class="w-6 text-center font-semibold" aria-live="polite">1</output>
+              <button type="button" id="qty-plus" class="w-9 h-9 rounded-full hover:bg-crema-white" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="bg-crema-white rounded-card border border-mocha-brown/15 p-6">
+          <legend class="sr-only">Delivery details</legend>
+          <p class="font-serif text-2xl">4. Delivery</p>
+          <div class="grid sm:grid-cols-2 gap-4 mt-4">
+            <label class="text-sm font-semibold">Full name<input class="field mt-1.5" name="name" autocomplete="name" required/></label>
+            <label class="text-sm font-semibold">Phone<input class="field mt-1.5" name="phone" type="tel" autocomplete="tel" required/></label>
+            <label class="text-sm font-semibold sm:col-span-2">Email<input class="field mt-1.5" name="email" type="email" autocomplete="email" required/></label>
+            <label class="text-sm font-semibold sm:col-span-2">Address<input class="field mt-1.5" name="address" autocomplete="street-address" required/></label>
+            <label class="text-sm font-semibold">City<input class="field mt-1.5" name="city" autocomplete="address-level2" required/></label>
+            <label class="text-sm font-semibold">Postal code<input class="field mt-1.5" name="postal" autocomplete="postal-code"/></label>
+          </div>
+          <p class="font-serif text-2xl mt-8">5. Payment</p>
+          <div class="grid sm:grid-cols-2 gap-3 mt-4">
+            <label class="option relative"><input type="radio" name="payment" value="card" checked /><span class="pill"><span class="font-semibold">Card</span><span class="text-xs text-muted-mocha">Secure checkout</span></span></label>
+            <label class="option relative"><input type="radio" name="payment" value="cod" /><span class="pill"><span class="font-semibold">Cash on delivery</span><span class="text-xs text-muted-mocha">Pay when it arrives</span></span></label>
+          </div>
+        </fieldset>
+      </div>
+
+      <!-- Summary -->
+      <aside class="lg:col-span-5">
+        <div class="lg:sticky lg:top-28 bg-dark-chocolate text-warm-ivory rounded-card p-6 lg:p-8 shadow-level-3">
+          <h2 class="font-serif text-2xl text-primary">Your order</h2>
+          <div class="mt-6 pb-6 border-b border-outline-variant/40">
+            <p class="font-semibold">Midnight Velvet</p>
+            <p id="sum-variant" class="text-sm text-on-surface-variant mt-1">250g · Whole Bean · One-time · ×1</p>
+          </div>
+          <dl class="space-y-3 py-6 text-sm border-b border-outline-variant/40">
+            <div class="flex justify-between"><dt class="text-on-surface-variant">Subtotal</dt><dd id="sum-subtotal">$24.00</dd></div>
+            <div id="sum-discount-row" class="flex justify-between hidden"><dt class="text-on-surface-variant">Subscription (−15%)</dt><dd id="sum-discount" class="text-secondary">−$0.00</dd></div>
+            <div class="flex justify-between"><dt class="text-on-surface-variant">Shipping</dt><dd id="sum-shipping">$5.00</dd></div>
+          </dl>
+          <div class="flex justify-between items-baseline pt-6">
+            <span class="font-semibold">Total</span><span id="sum-total" class="font-serif text-3xl text-primary-container">$29.00</span>
+          </div>
+          <p id="ship-note" class="text-xs text-on-surface-variant mt-2">Add $16.00 more for free shipping.</p>
+          <button type="submit" class="w-full mt-6 bg-primary-container text-on-primary-container font-bold py-4 rounded-full hover:bg-secondary transition-colors shadow-glow">Place Order</button>
+          <p id="form-error" class="hidden text-sm text-error mt-3 text-center" role="alert">Please fill in your delivery details.</p>
+          <p class="text-xs text-on-surface-variant mt-4 text-center flex items-center justify-center gap-1"><span class="material-symbols-outlined text-sm" aria-hidden="true">lock</span> Roasted to order · shipped within 24 hours</p>
+        </div>
+      </aside>
+    </form>
+  </main>
+
+  <!-- Confirmation -->
+  <div id="confirm" class="hidden fixed inset-0 z-[60] bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="confirm-title">
+    <div class="bg-surface-container rounded-card border border-outline-variant/40 p-8 max-w-sm w-full text-center shadow-level-3">
+      <div class="steam h-5" aria-hidden="true"><span></span><span></span><span></span></div>
+      <span class="material-symbols-outlined text-primary-container text-6xl" aria-hidden="true">local_cafe</span>
+      <h2 id="confirm-title" class="font-serif text-2xl mt-3">Your coffee is brewing!</h2>
+      <p class="text-sm text-on-surface-variant mt-2">Order <span id="order-no" class="text-primary">#RR-0000</span> received. We'll roast it and ship it within 24 hours.</p>
+      <p id="confirm-summary" class="text-sm mt-4"></p>
+      <a class="block mt-6 bg-primary-container text-on-primary-container font-semibold py-3 rounded-full hover:bg-secondary transition-colors" href="index.html">Back to home</a>
+    </div>
+  </div>
+
+  <script>
+  (function () {
+    const PRICES = { '250': 24, '500': 42, '1000': 76 };
+    const LABEL = { '250': '250g', '500': '500g', '1000': '1kg' };
+    const FREE_SHIP = 40, SHIP = 5;
+    const form = document.getElementById('order-form');
+    let qty = 1;
+    const val = (n) => form.querySelector(`input[name="${n}"]:checked`).value;
+    const money = (n) => '$' + n.toFixed(2);
+
+    const size = new URLSearchParams(location.search).get('size');
+    if (PRICES[size]) form.querySelector(`input[name="size"][value="${size}"]`).checked = true;
+
+    function update() {
+      const sub = PRICES[val('size')] * qty;
+      const subscribe = val('plan') === 'subscribe';
+      const disc = subscribe ? sub * 0.15 : 0;
+      const after = sub - disc;
+      const ship = after >= FREE_SHIP ? 0 : SHIP;
+      document.getElementById('qty').textContent = qty;
+      document.getElementById('sum-variant').textContent = `${LABEL[val('size')]} · ${val('grind')} · ${subscribe ? 'Every 2 weeks' : 'One-time'} · ×${qty}`;
+      document.getElementById('sum-subtotal').textContent = money(sub);
+      document.getElementById('sum-discount-row').classList.toggle('hidden', !subscribe);
+      document.getElementById('sum-discount').textContent = '−' + money(disc);
+      document.getElementById('sum-shipping').textContent = ship ? money(ship) : 'Free';
+      document.getElementById('sum-total').textContent = money(after + ship);
+      document.getElementById('ship-note').textContent = ship ? `Add ${money(FREE_SHIP - after)} more for free shipping.` : 'You get free shipping.';
+    }
+    form.addEventListener('change', update);
+    document.getElementById('qty-minus').addEventListener('click', () => { qty = Math.max(1, qty - 1); update(); });
+    document.getElementById('qty-plus').addEventListener('click', () => { qty = Math.min(10, qty + 1); update(); });
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const err = document.getElementById('form-error');
+      if (!form.checkValidity()) { err.classList.remove('hidden'); form.reportValidity(); return; }
+      err.classList.add('hidden');
+      document.getElementById('order-no').textContent = '#RR-' + Math.floor(1000 + Math.random() * 9000);
+      document.getElementById('confirm-summary').textContent = 'Midnight Velvet · ' + document.getElementById('sum-variant').textContent + ' · ' + document.getElementById('sum-total').textContent;
+      document.getElementById('confirm').classList.remove('hidden');
+    });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') document.getElementById('confirm').classList.add('hidden'); });
+    update();
+  })();
+  </script>
+
+  <footer class="bg-surface-container-lowest border-t border-outline-variant/30">
+    <div class="max-w-[1200px] mx-auto px-6 py-12 flex flex-col md:flex-row gap-8 md:items-center md:justify-between">
+      <div>
+        <p class="font-serif text-2xl text-primary">Roast &amp; Ritual</p>
+        <p class="text-sm text-on-surface-variant mt-1">One bean. Roasted to order. Shipped fresh.</p>
+      </div>
+      <nav class="flex gap-6 text-sm text-on-surface-variant" aria-label="Footer">
+        <a class="hover:text-secondary" href="index.html">Home</a>
+        <a class="hover:text-secondary" href="about.html">About</a>
+        <a class="hover:text-secondary" href="order.html">Order</a>
+        <a class="hover:text-secondary" href="mailto:hello@roastandritual.com">Contact</a>
+      </nav>
+    </div>
+    <p class="text-center text-xs text-outline pb-8">© <span data-year>2026</span> Roast &amp; Ritual. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
