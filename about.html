@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About — Roast & Ritual</title>
+  <title>About — Roast &amp; Ritual</title>
   <meta name="description" content="The story behind Midnight Velvet: one farm partnership in Antioquia, Colombia, roasted in small batches."/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&amp;family=Playfair+Display:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link rel="preload" href="assets/fonts/dmsans-latin.woff2" as="font" type="font/woff2" crossorigin=""/>
+  <link rel="preload" href="assets/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin=""/>
+  <link rel="preload" href="assets/fonts/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin=""/>
+  <link rel="preload" as="image" href="assets/about-origin-720.webp" imagesrcset="assets/about-origin-480.webp 480w, assets/about-origin-720.webp 720w, assets/about-origin-1024.webp 1024w, assets/about-origin-1376.webp 1376w" imagesizes="(max-width: 1200px) 100vw, 1200px" fetchpriority="high"/>
   <link rel="stylesheet" href="css/styles.css"/>
   <script>document.documentElement.classList.add("js")</script>
 </head>
@@ -47,15 +47,18 @@
   <main>
     <!-- HERO · Asset 1 -->
     <section class="border-b border-outline-variant/30">
-      <div class="max-w-[1200px] mx-auto px-6 pt-16 lg:pt-24 pb-16 text-center reveal">
+      <div class="max-w-[1200px] mx-auto px-6 pt-16 lg:pt-24 pb-16 text-center">
         <p class="text-xs font-bold tracking-[0.12em] uppercase text-secondary">Our story</p>
         <h1 class="font-serif text-5xl lg:text-6xl font-semibold mt-4">One bean. <em class="text-primary-container">Done right.</em></h1>
         <p class="text-lg text-on-surface-variant mt-5 max-w-2xl mx-auto">We make one coffee, and we put all our care into it. Midnight Velvet comes from a single partner farm in Antioquia, Colombia.</p>
       </div>
-      <div class="max-w-[1200px] mx-auto px-6 pb-20 reveal">
-        <div class="asset-slot aspect-[16/9] lg:aspect-[21/9] " data-asset="about-origin.jpg">
+      <div class="max-w-[1200px] mx-auto px-6 pb-20">
+        <div class="asset-slot aspect-[16/9] lg:aspect-[21/9] is-loaded" data-asset="about-origin.jpg">
           <span class="asset-label"><span class="material-symbols-outlined" aria-hidden="true">landscape</span>[ASSET: about-origin.jpg]</span>
-          <img class="asset-media" src="assets/about-origin.jpg" alt="Coffee farm in Antioquia, Colombia" loading="lazy"/>
+          <picture class="asset-media">
+            <source type="image/webp" srcset="assets/about-origin-480.webp 480w, assets/about-origin-720.webp 720w, assets/about-origin-1024.webp 1024w, assets/about-origin-1376.webp 1376w" sizes="(max-width: 1200px) 100vw, 1200px"/>
+            <img class="asset-media" src="assets/about-origin.jpg" alt="Coffee farm in Antioquia, Colombia" width="1376" height="768" fetchpriority="high" decoding="async"/>
+          </picture>
         </div>
       </div>
     </section>
@@ -64,10 +67,13 @@
     <section class="bg-latte-cream text-deep-roast">
       <div class="max-w-[1200px] mx-auto px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 items-center">
         <div class="reveal">
-          <div class="asset-slot aspect-[4/5] max-w-md mx-auto lg:mx-0 " data-asset="about-founder.jpg">
-          <span class="asset-label"><span class="material-symbols-outlined" aria-hidden="true">person</span>[ASSET: about-founder.jpg]</span>
-          <img class="asset-media" src="assets/about-founder.jpg" alt="Julian Vance, founder and master roaster" loading="lazy"/>
-        </div>
+          <div class="asset-slot aspect-[4/5] max-w-md mx-auto lg:mx-0 is-loaded" data-asset="about-founder.jpg">
+            <span class="asset-label"><span class="material-symbols-outlined" aria-hidden="true">person</span>[ASSET: about-founder.jpg]</span>
+            <picture class="asset-media">
+              <source type="image/webp" srcset="assets/about-founder-450.webp 450w, assets/about-founder.webp 896w" sizes="(max-width: 1024px) 90vw, 448px"/>
+              <img class="asset-media" src="assets/about-founder.jpg" alt="Julian Vance, founder and master roaster" width="896" height="1200" loading="lazy" decoding="async"/>
+            </picture>
+          </div>
         </div>
         <div class="reveal">
           <p class="text-xs font-bold tracking-[0.12em] uppercase text-mocha-brown">Since 2018</p>
@@ -84,10 +90,13 @@
     <section class="border-b border-outline-variant/30">
       <div class="max-w-[1200px] mx-auto px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 items-center">
         <div class="reveal lg:order-2">
-          <div class="asset-slot aspect-[4/3] " data-asset="about-roast.jpg">
-          <span class="asset-label"><span class="material-symbols-outlined" aria-hidden="true">local_fire_department</span>[ASSET: about-roast.jpg]</span>
-          <img class="asset-media" src="assets/about-roast.jpg" alt="Freshly roasted beans in the drum roaster cooling tray" loading="lazy"/>
-        </div>
+          <div class="asset-slot aspect-[4/3] is-loaded" data-asset="about-roast.jpg">
+            <span class="asset-label"><span class="material-symbols-outlined" aria-hidden="true">local_fire_department</span>[ASSET: about-roast.jpg]</span>
+            <picture class="asset-media">
+              <source type="image/webp" srcset="assets/about-roast-600.webp 600w, assets/about-roast.webp 1200w" sizes="(max-width: 1024px) 90vw, 560px"/>
+              <img class="asset-media" src="assets/about-roast.jpg" alt="Freshly roasted beans in the drum roaster cooling tray" width="1200" height="896" loading="lazy" decoding="async"/>
+            </picture>
+          </div>
         </div>
         <div class="reveal lg:order-1">
           <p class="text-xs font-bold tracking-[0.12em] uppercase text-secondary">How it's made</p>
@@ -118,6 +127,6 @@
     </div>
     <p class="text-center text-xs text-outline pb-8">© <span data-year>2026</span> Roast &amp; Ritual. All rights reserved.</p>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

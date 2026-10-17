@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Order Midnight Velvet — Roast & Ritual</title>
+  <title>Order Midnight Velvet — Roast &amp; Ritual</title>
   <meta name="description" content="Order Midnight Velvet coffee beans. Choose your size and grind, buy once or subscribe and save 15%."/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&amp;family=Playfair+Display:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link rel="preload" href="assets/fonts/dmsans-latin.woff2" as="font" type="font/woff2" crossorigin=""/>
+  <link rel="preload" href="assets/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin=""/>
+  <link rel="preload" href="assets/fonts/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin=""/>
+  <link rel="preload" href="assets/product-bag-400.webp" as="image" type="image/webp" fetchpriority="high"/>
   <link rel="stylesheet" href="css/styles.css"/>
   <script>document.documentElement.classList.add("js")</script>
 </head>
@@ -49,10 +49,13 @@
       <!-- Product + options -->
       <div class="lg:col-span-7 space-y-8">
         <div class="grid sm:grid-cols-[180px_1fr] gap-6 items-center">
-          <div class="asset-slot aspect-square " data-asset="product-bag.jpg">
-          <span class="asset-label"><span class="material-symbols-outlined" aria-hidden="true">inventory_2</span>[ASSET: product-bag.jpg]</span>
-          <img class="asset-media" src="assets/product-bag.jpg" alt="Midnight Velvet coffee bag" loading="lazy"/>
-        </div>
+          <div class="asset-slot aspect-square is-loaded" data-asset="product-bag.jpg">
+            <span class="asset-label"><span class="material-symbols-outlined" aria-hidden="true">inventory_2</span>[ASSET: product-bag.jpg]</span>
+            <picture class="asset-media">
+              <source type="image/webp" srcset="assets/product-bag-400.webp 400w, assets/product-bag-800.webp 800w, assets/product-bag.webp 1024w" sizes="(max-width: 640px) 100vw, 180px"/>
+              <img class="asset-media" src="assets/product-bag.jpg" alt="Midnight Velvet coffee bag" width="1024" height="1024" fetchpriority="high" decoding="async"/>
+            </picture>
+          </div>
           <div>
             <p class="text-xs font-bold tracking-[0.12em] uppercase text-mocha-brown">Single origin · Antioquia, Colombia</p>
             <h1 class="font-serif text-4xl lg:text-5xl font-semibold mt-2">Midnight Velvet</h1>
@@ -207,6 +210,6 @@
     </div>
     <p class="text-center text-xs text-outline pb-8">© <span data-year>2026</span> Roast &amp; Ritual. All rights reserved.</p>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
